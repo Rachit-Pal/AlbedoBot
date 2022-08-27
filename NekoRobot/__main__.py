@@ -112,7 +112,7 @@ HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/4bf4b16a4e561dac5ad62.jpg) 」────
+────「 [{}](https://telegra.ph/file/104bc33aa49969952c611.jpg) 」────
 *Hola! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Sexy Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -131,9 +131,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-        InlineKeyboardButton(text="❔ Chit Chat", url="https://telegram.dog/Besties_XD"),
+        InlineKeyboardButton(text="🧾 Quick setup", url="https://t.me/SaitamaBotUpdate/6"),
         InlineKeyboardButton(
-            text="[► Repo ◄]", url="https://github.com/Awesome-Prince/NekoRobot-3"
+            text="[► Owner ◄]", url="https://telegram.dog/SAlTAM4"
         ),
     ],
     [
@@ -141,19 +141,19 @@ buttons = [
             text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/BlackLover_Support"
+            text="🔔 Updates", url="https://telegram.dog/SaitamaBotSupport"
         ),
     ],
 ]
 
 HELP_STRINGS = """
-*Main* commands available:
-➛ /help: PM's you this message.
-➛ /help <module name>: PM's you info about that module.
-➛ /donate: information on how to donate!
-➛ /settings:
-   ➛ in PM: will send you your settings for all supported modules.
-   ➛ in a group: will redirect you to pm, with all that chat's settings.
+🎛 *Main commands available:*
+➥ /help: PM's you this message.
+➥ /help <module name>: PM's you info about that module.
+➥ /donate: information on how to donate!
+➥ /settings:
+    ➥ in PM: will send you your settings for all supported modules.
+    ➥ in a group: will redirect you to pm, with all that chat's settings.
 """
 
 GROUP_START_IMG = (
@@ -303,8 +303,8 @@ def start(update: Update, context: CallbackContext):
                             url=f"https://telegram.dog/{SUPPORT_CHAT}",
                         ),
                         InlineKeyboardButton(
-                            text="📢 Updates",
-                            url="https://telegram.dog/BlackLover_Updates",
+                            text="🔔 Updates",
+                            url="https://telegram.dog/SaitamaBotSupport",
                         ),
                     ]
                 ]
@@ -660,13 +660,13 @@ def donate(update: Update, context: CallbackContext) -> None:
             )
 
             update.effective_message.reply_text(
-                text="I'm free for everyone❤️\njust donate by subs channel, Don't forget to join the support group.",
+                text="I'm free for everyone❤️\njust donate by subscribing channel, Don't forget to join the support group.",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="📢 Updates",
-                                url="https://telegram.dog/BlackLover_Updates",
+                                text="🔔 Updates",
+                                url="https://telegram.dog/SaitamaBotSupport",
                             ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
@@ -744,7 +744,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"Neko started, Using long polling. | BOT: [@{NEKO_PTB.bot.username}]"
+            f"Albedo started, Using long polling. | BOT: [@{NEKO_PTB.bot.username}]"
         )
         updater.start_polling(
             timeout=15,
