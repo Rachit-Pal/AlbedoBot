@@ -1,87 +1,39 @@
-![Neko-X](https://telegra.ph/file/843497f356667a693c0f5.jpg)
+![Albedo](https://telegra.ph/file/104bc33aa49969952c611.jpg)
+# Albedō bot // @DarkAlbedoBot
 
-# 𝐍𝐞𝐤𝐨 𝐑𝐨𝐛𝐨𝐭 [ BETA ]
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/Awesome-Prince/NekoRobot-3/?ref=repository-badge) [![Join Support!](https://img.shields.io/badge/Join%20Channel-!-red)](https://telegram.dog/BlackLover_Support) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Awesome-Prince/NekoRobot-3/graphs/contributors/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Dank-del/)</br>
 
-A modular telegram Python bot running on python3 with an sqlalchemy, Redis, mongodb database.
 
-###  ╔═━「 Status 」
+![Python Version](https://img.shields.io/badge/python-3.8-green?style=for-the-badge&logo=appveyor)
+![Issues](https://img.shields.io/github/issues/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
+![Forks](https://img.shields.io/github/forks/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
+![Stars](https://img.shields.io/github/stars/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
+![Contributors](https://img.shields.io/github/contributors/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
+![Repository Size](https://img.shields.io/github/repo-size/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)</br>
 
-- [x] Maintained
-- [x] Support Group Available
-- [x] Free
-- [x] OpenSourced
-- [x] Working Instance Available
-- [x] Clean Code
-- [x] Heroku Deploy
-- [x] Docker/Local Machine
 
-╘═━「 Can be found on telegram as [NekoRobot](https://telegram.dog/NekoX_bot) 」
+[![Join Support!](https://img.shields.io/badge/Support%20Chat-Saitama%20Support-red)](https://t.me/SaitamaBotSupport)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cfb691a93a064d9ea753ef2b5fccf797)](https://www.codacy.com/manual/Dank-del/EnterpriseALRobot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Dank-del/EnterpriseALRobot&amp;utm_campaign=Badge_Grade)
 
-## ╔═━「 Credits 」
+
+A modular telegram Python bot running on python3 with an sqlalchemy database.
+
+Originally a marie fork - Albedō has evolved further and was built to be more useful for Anime Chats.
+
+Can be found on telegram as [Albedō](https://t.me/DarkAlbedoBot).
+
+The Support group can be reached out to at [Saitama Support](https://t.me/SaitamaBotSupport), where you can ask for help setting up your bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available.
+
+
+## Credits
 The bot is based of on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
 This repo was just reamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
 
-### ╔═━「 Creator Info/Credits 」
+-------------------------------------------------------------------------------------
 
-+ [Lovely-Prince](https://github.com/Awesome-Prince) : OWNER | DEV
-+ [RajuKumar](https://github.com/Awesome-RJ) : DEV
-+ [STB](https://github.com/STBxD) : DEV
-+ [H0DAKA](https://github.com/H0daka) : DEV
-+ [AASF-CYBERKING](https://github.com/AASFCYBERKING) : NEKO FUN MODULE, LIVEGRAM MODULE
-+ [CTZFAMILY](https://github.com/CTZFAMILY) : FUN MODULE, SOME MODULES
-+ [AkshayRajput](https://github.com/TheHamkerCat) : ARQ MODULES
-+ [TheRealPhoenix](https://github.com/rsktg) : BASE
-+ [DragSama](https://github.com/DragSama) : ANIME
-+ [TsunayoshiSawada](https://github.com/TsunayoshiSawada) : BASE
-+ [Pokurt](https://github.com/pokurt) : WHATANIME MODULE API
-+ [Dank-del](https://github.com/Dank-del) : LEWD MODULE
-+ [InukaAsith](https://github.com/InukaAsith) : MEMES, INLINE ETC MODULES 
-+ [AyraHikari](https://github.com/AyraHikari): FED MODULE
-+ [Peaktogoo](https://github.com/peaktogoo) : FED MODULE
 
-╘═━「 Any other authorship/credits can be seen through the commits. 」
+*Albedō is free and open source software and supports the right to read, distribute and repair.*
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-The Support group can be reached out to at [BlackLover • Support](https://telegram.dog/Blacklover_Support), where you can ask for help about [NekoRobot](https://telegram.dog/NekoX_bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
-
-<details>
-	<summary>Deploy Options</summary>
-<a href="https://cloud.okteto.com/#/deploy?repository=https://github.com/Awesome-Prince/NekoRobot-3"><img src="https://user-images.githubusercontent.com/36935426/167272305-91fd67c9-c3fc-4b4b-8a73-c35e57c8fcc5.png" height="40"></a>
-<a href="https://heroku.com/deploy?template=https://github.com/Awesome-Prince/NekoRobot-3"><img src="https://www.herokucdn.com/deploy/button.svg" height="40"></a>
-<a href="https://railway.app"><img src="https://railway.app/button.svg" height="40"></a>
-</details> 
-
-<details>
-    <summary>More Deploy Options</summary>
-    <br>
-    <p align="center">
-
-    Deploying on Local Machine
-
-</p>
-
-```console
-    ~$ git clone https://github.com/Awesome-Prince/NekoRobot-3.git
-    ~$ cd NekoRobot
-    ~$ cp sample_config.py config.py
-```
-
-Edit Config.py with your own Values
-
-Start with ```python3 -m NekoRobot```
-
-</details>    
-
-<details>
-     <summary>Deploying On IDE VMs Like Repl.it</summary>
-       <br>
-         <p align="left">
-            <b> 
-
-            Refer to Deploying On Local Machine.
-
- </b>
-</p>
-</details>
+![Alt](https://repobeats.axiom.co/api/embed/d2897eb81239aab92e1394b6d833b19c8dbac24c.svg "Repobeats analytics image")
