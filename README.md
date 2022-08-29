@@ -5,7 +5,7 @@
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Dank-del/)</br>
 
 
-![Python Version](https://img.shields.io/badge/python-3.8-green?style=for-the-badge&logo=appveyor)
+![Python Version](https://img.shields.io/badge/python-3.10-green?style=for-the-badge&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
 ![Forks](https://img.shields.io/github/forks/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
 ![Stars](https://img.shields.io/github/stars/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
