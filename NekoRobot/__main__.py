@@ -118,7 +118,7 @@ PM_START_TEXT = """
 ❍ *Uptime:* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+➛ Try The Help Button Below To Know My Abilities ××
 """
 
 buttons = [
