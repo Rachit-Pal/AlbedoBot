@@ -6,11 +6,11 @@
 
 
 ![Python Version](https://img.shields.io/badge/python-3.10-green?style=for-the-badge&logo=appveyor)
-![Issues](https://img.shields.io/github/issues/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
-![Forks](https://img.shields.io/github/forks/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
-![Stars](https://img.shields.io/github/stars/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
-![Contributors](https://img.shields.io/github/contributors/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)
-![Repository Size](https://img.shields.io/github/repo-size/Rachit-Pal/nekorobot-3?style=for-the-badge&logo=appveyor)</br>
+![Issues](https://img.shields.io/github/issues/Rachit-Pal/AlbedoBot?style=for-the-badge&logo=appveyor)
+![Forks](https://img.shields.io/github/forks/Rachit-Pal/AlbedoBot?style=for-the-badge&logo=appveyor)
+![Stars](https://img.shields.io/github/stars/Rachit-Pal/AlbedoBot?style=for-the-badge&logo=appveyor)
+![Contributors](https://img.shields.io/github/contributors/Rachit-Pal/AlbedoBot?style=for-the-badge&logo=appveyor)
+![Repository Size](https://img.shields.io/github/repo-size/Rachit-Pal/AlbedoBot?style=for-the-badge&logo=appveyor)</br>
 
 
 [![Join Support!](https://img.shields.io/badge/Support%20Chat-Saitama%20Support-red)](https://t.me/SaitamaBotSupport)
