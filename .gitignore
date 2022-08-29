@@ -1,5 +1,5 @@
-NekoRobot/*.session
-NekoRobot/*.session-journal
+AlbedoBot/*.session
+AlbedoBot/*.session-journal
 log.txt
 *.pyc
 .idea/
@@ -7,8 +7,8 @@ log.txt
 .pydevproject
 .directory
 .vscode
-NekoRobot/modules/helper_funcs/temp.txt
-NekoRobot/elevated_users.json
+AlbedoBot/modules/helper_funcs/temp.txt
+AlbedoBot/elevated_users.json
 start-3.6.bat
 *.session
 kangsticker.png

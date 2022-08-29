@@ -14,4 +14,4 @@ RUN pip3 install -U -r requirements.txt
 
 COPY . .
 
-CMD [ "python3", "-m" , "NekoRobot"]
+CMD [ "python3", "-m" , "AlbedoBot"]
