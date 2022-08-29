@@ -130,29 +130,25 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-        InlineKeyboardButton(text="🧾 Quick setup", url="https://t.me/SaitamaBotUpdate/6"),
-        InlineKeyboardButton(
-            text="[► Owner ◄]", url="https://telegram.dog/SAlTAM4"
-        ),
+        InlineKeyboardButton(text="[► Owner ◄]", url="https://telegram.dog/SAlTAM4"),
     ],
     [
         InlineKeyboardButton(
             text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="🔔 Updates", url="https://telegram.dog/SaitamaBotSupport"
+            text="🔔 Updates", url="https://telegram.dog/SaitamaBotUpdate"
         ),
     ],
 ]
 
 HELP_STRINGS = """
-🎛 *Main commands available:*
-➥ /help: PM's you this message.
-➥ /help <module name>: PM's you info about that module.
-➥ /donate: information on how to donate!
-➥ /settings:
-    ➥ in PM: will send you your settings for all supported modules.
-    ➥ in a group: will redirect you to pm, with all that chat's settings.
+🎛 *Main commands available:* \n
+ • /start: Starts me, can be used to check I'm alive or not.
+ • /help <module name>: PM's you this message.
+ • /settings:
+   - in PM: will send you your settings for all supported modules.
+   - in a group: will redirect you to pm, with all that chat's settings.
 """
 
 GROUP_START_IMG = (
@@ -302,7 +298,7 @@ def start(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="🔔 Updates",
-                            url="https://telegram.dog/SaitamaBotSupport",
+                            url="https://telegram.dog/SaitamaBotUpdate",
                         ),
                     ]
                 ]
