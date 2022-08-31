@@ -113,23 +113,24 @@ def warn(
         )
 
     else:
-        keyboard = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🔘 Remove warn", callback_data="rm_warn({})".format(user.id)
-                    )
-                ]
-            ]
-        )
+        keyboard = [[
+            InlineKeyboardButton("🚨 Remove Warn",
+                                 callback_data=f"rm_warn({user.id})")
+        ]]
 
-        reply = (
-            f"<code>❕</code><b>Warn Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
-            f"<code> </code><b>•  Count:</b> {num_warns}/{limit}"
-        )
+        if rules := rules_sql.get_rules(chat.id):
+            keyboard[0].append(
+                InlineKeyboardButton(
+                    "📝 Rules",
+                    url=f"t.me/DarkAlbedoBot?start={chat.id}",
+                ))
+
+        reply = (f"<b>╔━「 Warn Event 」</b>\n"
+                 f"<b>➛ User:</b> {mention_html(user.id, user.first_name)}\n"
+                 f"<b>➛ Count:</b> {num_warns}/{limit}")
         if reason:
-            reply += f"\n<code> </code><b>•  Reason:</b> {html.escape(reason)}"
+            reply += f"\n<b>➛ Reason:</b> {html.escape(reason)}"
+        reply += '\nPlease take some of your precious time to read the rules!'
 
         log_reason = (
             f"<b>{html.escape(chat.title)}:</b>\n"
@@ -137,8 +138,7 @@ def warn(
             f"<b>Admin:</b> {warner_tag}\n"
             f"<b>User:</b> {mention_html(user.id, user.first_name)}\n"
             f"<b>Reason:</b> {reason}\n"
-            f"<b>Counts:</b> <code>{num_warns}/{limit}</code>"
-        )
+            f"<b>Counts:</b> <code>{num_warns}/{limit}</code>")
 
     try:
         message.reply_text(reply, reply_markup=keyboard, parse_mode=ParseMode.HTML)
