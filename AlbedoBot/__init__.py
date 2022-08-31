@@ -1,51 +1,18 @@
-"""
-BSD 2-Clause License
-
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2069, Rachit-Pal, [ https://github.com/Rachit-Pal ]
-
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-"""
-
 import logging
 import os
 import sys
 import time
 
 import aiohttp
-import httpx
 import spamwatch
 import telegram.ext as tg
 from aiohttp import ClientSession
-from httpx import AsyncClient, Timeout
-from pyrogram import Client
-from pyrogram.enums import ParseMode
-from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, PeerIdInvalid
+from pyrogram import Client, errors
 from Python_ARQ import ARQ
-from telegraph import Telegraph
 from telethon import TelegramClient
 from telethon.sessions import MemorySession
+
+from AlbedoBot.hacking_script import PM_START_TEXT
 
 StartTime = time.time()
 
@@ -56,15 +23,14 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-LOGGER = logging.getLogger(__name__)
+LOGGER = logging.getLogger("[AlbedoBot]")
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
-        "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting.",
+        "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
     )
-    sys.exit(1)
-
+    quit(1)
 
 ENV = bool(os.environ.get("ENV", False))
 
@@ -98,11 +64,9 @@ if ENV:
     try:
         TIGERS = set(int(x) for x in os.environ.get("TIGERS", "").split())
     except ValueError:
-        raise Exception("Your scout users list does not contain valid integers.")
+        raise Exception("Your tiger users list does not contain valid integers.")
 
-    INFOPIC = bool(
-        os.environ.get("INFOPIC", True)
-    )  # Info Pic (use True[Value] If You Want To Show In /info.)
+    INFOPIC = bool(os.environ.get("INFOPIC", True))
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     ARQ_API_URL = os.environ.get("ARQ_API_URL", None)
@@ -257,52 +221,28 @@ pgram = Client(
 
 # Credits Logger
 print(
-    "[ALBEDOBOT] ALBEDO Is Starting. | BlackLover Network Project | BSD 2-Clause License."
+    "[ALBEDOBOT] ALBEDO Is Starting. | Saitama TG Bot Project | BSD 2-Clause License."
 )
 print(
-    "[ALBEDOBOT] Mewo Mewo! Successfully Connected With BlackLover • Data Center • Chennai"
-)
-print(
-    "[ALBEDOBOT] Project Maintained By: github.com/Rachit-Pal (https://github.com/Rachit-Pal/AlbedoBot)"
+    "[ALBEDOBOT] Mewo Mewo! Successfully Connected With to Data Center • Chennai"
 )
 
-print("[ALBEDOBOT]: Telegraph Installing")
-telegraph = Telegraph()
-print("[ALBEDOBOT]: Telegraph Account Creating")
-telegraph.create_account(short_name="Neko")
-updater = tg.Updater(
-    token=TOKEN,
-    workers=WORKERS,
-    request_kwargs={"read_timeout": 10, "connect_timeout": 10},
-    use_context=True,
-)
-print("[ALBEDOBOT]: TELETHON CLIENT STARTING")
-tbot = TelegramClient(MemorySession(), API_ID, API_HASH)
-NEKO_PTB = updater.dispatcher
-# asyncio.get_event_loop().run_until_complete(NEKO_PTB.bot.initialize())
 # ------------------------------------------------------------------
-print("[ALBEDOBOT]: PYROGRAM CLIENT STARTING")
-PyroGram = TOKEN.split(":")[0]
-pgram = Client(
-    name=PyroGram,
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=TOKEN,
-    workers=min(32, os.cpu_count() + 4),
-    parse_mode=ParseMode.HTML,
-    sleep_threshold=60,
-    in_memory=True,
-)
 print("[INFO]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
+
 # ARQ Client
 print("[INFO]: INITIALIZING ARQ CLIENT")
-arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
+arq = ARQ("https://arq.hamker.in", "ERUOGT-KHSTDT-RUYZKQ-FZNSHO-ARQ", aiohttpsession)
 print(
-    "[ALBEDOBOT]: Connecting To BlackLover • Data Center • Chennai • PostgreSQL Database"
+    "[ALBEDOBOT]: Connecting To Data Center • Chennai • PostgreSQL Database"
 )
-timeout = httpx.Timeout(40)
-http = httpx.AsyncClient(http2=True, timeout=timeout)
+
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
+pbot = Client("AlbedoBotpbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+
+dispatcher = updater.dispatcher
 
 
 async def get_entity(client, entity):
