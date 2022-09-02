@@ -462,14 +462,14 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/BlackLover_Updates)\n\n"
-            + "\n╘══「 by [BlackLover • Network](https://t.me/BlackLover_Network) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/AlbedoUpdate)\n\n"
+            + "\n╘══「 by [Saitama](https://t.me/SAlTAM4) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Awesome-Prince/AlbedoBot-3"
+                            text="Repo", url="github.com/Rachit-Pal/AlbedoBot"
                         )
                     ]
                 ]
@@ -483,9 +483,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/SaitamaBotUpdate)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/AlbedoUpdate)\n\n"
                 )
-                + "╘══「 by [BlackLover • Network](https://t.me/BlackLover_Network) 」\n"
+                + "╘══「 by [Saitama](https://t.me/SAlTAM4) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
