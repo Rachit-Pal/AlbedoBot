@@ -1,4 +1,4 @@
-![Albedo](https://telegra.ph/file/104bc33aa49969952c611.jpg
+![Albedo](https://telegra.ph/file/104bc33aa49969952c611.jpg)
 # Albedō bot // @DarkAlbedoBot
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
