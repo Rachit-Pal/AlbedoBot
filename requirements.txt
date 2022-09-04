@@ -21,7 +21,7 @@ requests
 sqlalchemy==1.4.40
 telethon==1.25.0
 python-telegram-bot==13.14
-pyrogram==2.0.40
+pyrogram==2.0.49
 cloudscraper==1.2.64
 psycopg2-binary
 feedparser
