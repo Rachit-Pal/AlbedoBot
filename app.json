@@ -1,5 +1,5 @@
 {
-      "name": "NekoRobot",
+      "name": "AlbedoBot",
       "description": "An Anime themed Telegram group management bot.",
       "logo": "https://telegra.ph/file/18e6b01aa06b93c13d1ab.png",
       "keywords": [
@@ -7,9 +7,9 @@
          "anime",
          "group",
          "manager",
-         "NekoRobot"
+         "AlbedoBot"
       ],   
-   "repository": "https://github.com/Awesome-Prince/NekoRobot-3",
+   "repository": "https://github.com/Rachit-Pal/AlbedoBot",
    "addons": [
       {
          "options": {
@@ -47,12 +47,12 @@
       "BOT_NAME": {
          "description": "Your Bot Name.",
          "required": true,
-         "value": "Neko X"
+         "value": "Albedo"
       },
       "BOT_USERNAME": {
          "description": "Your Bot UserName Without @.",
          "required": true,
-         "value": "Nekox_Robot"
+         "value": "DarkAlbedoBot"
       },
       "ERROR_LOGS": {
          "description": "Error Logs (Channel Ya Group Choice Is Yours)",
@@ -76,27 +76,27 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "SaitamaBotSupport"
+         "value": "StrawHatTeam"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-123456798"
+         "value": "-123456789"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-123456798"
+         "value": "-123456789"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": "-xyz"
+         "value": "V7NS1NBFEL4X24L6"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": "-xyz"
+         "value": "2AS711XS1O9B"
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
@@ -106,7 +106,7 @@
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
-         "value": ""
+         "value": "mEPd37f1pWsVvBNDZD2jiAz9KsT8EbPONR4JdM2GE9TH_N60OYcim2J8Asa8yLeB"
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
